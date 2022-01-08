@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class TemperatureBeanImpl implements TemperatureBean {
     private String name;
-    TemperatureServiceBean service;
+    private TemperatureServiceBean service;
 
     @Override
     public void printTemperature() {

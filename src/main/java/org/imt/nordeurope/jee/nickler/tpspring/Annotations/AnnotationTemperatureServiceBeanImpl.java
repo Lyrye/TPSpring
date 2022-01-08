@@ -12,7 +12,7 @@ import java.util.Map;
 
 @Component
 @Primary
-@Scope(proxyMode = ScopedProxyMode.TARGET_CLASS, value = "singleton")
+@Scope(value = "singleton")
 public class AnnotationTemperatureServiceBeanImpl implements TemperatureServiceBean {
     public static Map<String, Integer> temperatureByCountries;
 

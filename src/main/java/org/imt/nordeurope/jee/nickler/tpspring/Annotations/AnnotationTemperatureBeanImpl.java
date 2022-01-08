@@ -12,11 +12,13 @@ import java.math.BigDecimal;
 
 @Component
 @Primary
-@Scope(proxyMode = ScopedProxyMode.TARGET_CLASS, value = "prototype")
+@Scope(value = "prototype")
 public class AnnotationTemperatureBeanImpl implements TemperatureBean {
+
     private String name;
+
     @Autowired
-    TemperatureServiceBean service;
+    private TemperatureServiceBean service;
 
     @Override
     public void printTemperature() {
