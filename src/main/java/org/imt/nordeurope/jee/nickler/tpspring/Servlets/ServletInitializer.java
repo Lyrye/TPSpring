@@ -1,5 +1,6 @@
-package org.imt.nordeurope.jee.nickler.tpspring;
+package org.imt.nordeurope.jee.nickler.tpspring.Servlets;
 
+import org.imt.nordeurope.jee.nickler.tpspring.TpSpringApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

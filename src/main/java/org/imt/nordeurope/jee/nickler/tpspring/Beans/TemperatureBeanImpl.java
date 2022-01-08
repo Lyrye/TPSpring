@@ -1,4 +1,7 @@
-package org.imt.nordeurope.jee.nickler.tpspring;
+package org.imt.nordeurope.jee.nickler.tpspring.Beans;
+
+import org.imt.nordeurope.jee.nickler.tpspring.Commons.TemperatureBean;
+import org.imt.nordeurope.jee.nickler.tpspring.Commons.TemperatureServiceBean;
 
 import java.math.BigDecimal;
 

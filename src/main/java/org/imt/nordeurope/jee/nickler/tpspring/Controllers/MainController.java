@@ -1,6 +1,8 @@
-package org.imt.nordeurope.jee.nickler.tpspring;
+package org.imt.nordeurope.jee.nickler.tpspring.Controllers;
 
 import org.imt.nordeurope.jee.nickler.tpspring.Annotations.AnnotationTemperatureMain;
+import org.imt.nordeurope.jee.nickler.tpspring.Beans.TemperatureMain;
+import org.imt.nordeurope.jee.nickler.tpspring.Commons.TemperatureBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -41,7 +43,7 @@ public class MainController {
         return "temperatures";
     }
 
-    private void setAttribute(Model model, TemperatureBean frBean,TemperatureBean deBean,TemperatureBean enBean) {
+    private void setAttribute(Model model, TemperatureBean frBean, TemperatureBean deBean, TemperatureBean enBean) {
         model.addAttribute("temperatureFR", frBean.getTemperature());
         model.addAttribute("temperatureDE", deBean.getTemperature());
         model.addAttribute("temperatureEN", enBean.getTemperature());

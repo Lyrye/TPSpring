@@ -1,6 +1,6 @@
-package org.imt.nordeurope.jee.nickler.tpspring;
+package org.imt.nordeurope.jee.nickler.tpspring.Beans;
 
-import org.springframework.context.annotation.Bean;
+import org.imt.nordeurope.jee.nickler.tpspring.Commons.TemperatureBean;
 
 import javax.annotation.PostConstruct;
 

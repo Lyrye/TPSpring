@@ -6,19 +6,19 @@
 
 
 
-    <bean id="temperatureServiceBeanImpl" class="org.imt.nordeurope.jee.nickler.tpspring.TemperatureServiceBeanImpl" scope="singleton"/>
+    <bean id="temperatureServiceBeanImpl" class="org.imt.nordeurope.jee.nickler.tpspring.Beans.TemperatureServiceBeanImpl" scope="singleton"/>
 
-    <bean id="temperatureBeanImplFr" class="org.imt.nordeurope.jee.nickler.tpspring.TemperatureBeanImpl" scope="prototype">
+    <bean id="temperatureBeanImplFr" class="org.imt.nordeurope.jee.nickler.tpspring.Beans.TemperatureBeanImpl" scope="prototype">
         <property name="service" ref="temperatureServiceBeanImpl"/>
     </bean>
-    <bean id="temperatureBeanImplEn" class="org.imt.nordeurope.jee.nickler.tpspring.TemperatureBeanImpl" scope="prototype">
+    <bean id="temperatureBeanImplEn" class="org.imt.nordeurope.jee.nickler.tpspring.Beans.TemperatureBeanImpl" scope="prototype">
         <property name="service" ref="temperatureServiceBeanImpl"/>
     </bean>
-    <bean id="temperatureBeanImplDe" class="org.imt.nordeurope.jee.nickler.tpspring.TemperatureBeanImpl" scope="prototype">
+    <bean id="temperatureBeanImplDe" class="org.imt.nordeurope.jee.nickler.tpspring.Beans.TemperatureBeanImpl" scope="prototype">
         <property name="service" ref="temperatureServiceBeanImpl"/>
     </bean>
 
-   <bean id="mainTemperature" class="org.imt.nordeurope.jee.nickler.tpspring.TemperatureMain">
+   <bean id="mainTemperature" class="org.imt.nordeurope.jee.nickler.tpspring.Beans.TemperatureMain">
         <property name="frBean" ref="temperatureBeanImplFr"/>
         <property name="deBean" ref="temperatureBeanImplDe"/>
         <property name="enBean" ref="temperatureBeanImplEn"/>

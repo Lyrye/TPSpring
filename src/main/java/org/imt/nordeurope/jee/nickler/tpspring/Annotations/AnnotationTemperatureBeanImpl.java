@@ -1,11 +1,10 @@
 package org.imt.nordeurope.jee.nickler.tpspring.Annotations;
 
-import org.imt.nordeurope.jee.nickler.tpspring.TemperatureBean;
-import org.imt.nordeurope.jee.nickler.tpspring.TemperatureServiceBean;
+import org.imt.nordeurope.jee.nickler.tpspring.Commons.TemperatureBean;
+import org.imt.nordeurope.jee.nickler.tpspring.Commons.TemperatureServiceBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
